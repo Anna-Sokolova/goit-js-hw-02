@@ -1,0 +1,16 @@
+function checkForSpam(message) {
+  'use strict';
+
+  const isInMessage =
+    message.toLowerCase().includes('spam') ||
+    message.toLowerCase().includes('sale');
+  return isInMessage ? true : false;
+}
+
+console.log(checkForSpam('Latest technology news'));
+
+console.log(checkForSpam('JavaScript weekly newsletter'));
+
+console.log(checkForSpam('Get best sale offers now!'));
+
+console.log(checkForSpam('[SPAM] How to earn fast money?'));
