@@ -21,3 +21,17 @@ console.log(getItemsString(friends));
 console.log(getItemsString(numbers));
 
 // Результатом вызова функции должна быть пустая строка, если array - пустой массив
+
+
+
+/* Второй способ решения методом массива ForEach
+
+const getItemsString = function(array) {
+    'use strict';
+    let result = '';
+  array.forEach((el, idx) => result += `${idx +1} - ${el}\n`)
+    return result;
+};
+
+console.log(getItemsString(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']));
+*/
